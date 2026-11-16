@@ -1,0 +1,16 @@
+if SHIELD_MY_SPLIT_LEFT
+
+config ZMK_KEYBOARD_NAME
+    default "My Split Test"
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+
+endif
+
+if SHIELD_MY_SPLIT_LEFT || SHIELD_MY_SPLIT_RIGHT
+
+config ZMK_SPLIT
+    default y
+
+endif
